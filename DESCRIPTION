@@ -1,0 +1,13 @@
+Package: TwoWayCrossedANOVA
+Type: Package
+Title: PB tests for two-way crossed ANOVA
+Version: 0.1.0
+Author: Anjana Mondal
+Maintainer: Anjana Mondal <mondal.anjana25@gmail.com>
+Description: It tests equality of row effects against ordered alternative 
+           in two-way crossed ANOVa under heteroscedasticity
+License: GPL-2
+Encoding: UTF-8
+Depends: Iso
+LazyData: true
+RoxygenNote: 7.2.0
