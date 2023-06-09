@@ -5,16 +5,9 @@ Inside the package, functions made for LRT, Min-Min-T, and Min-Max-T tests are r
 The functions LRT(), MinMinT() and MinMaxT() return the values of the test statistic, corresponding critical points, and decision (rejected or not).
 To install packages from GitHub in R, user needs to install the package "devtools" first.
 To use the package in R software run the following codes:
->install.packages("devtools")
->library(devtools)
->install_github("AnjanaStat/TwoWayCrossedANOVA") 
->library(TwoWayCrossedANOVA)
+install.packages("devtools")->library(devtools)->install_github("AnjanaStat/TwoWayCrossedANOVA")->library(TwoWayCrossedANOVA)
 To get the results for the data `WPI_JWPB', use the following codes:
-for loading the dataset (the data must be in .csv format)
->WPI_JWPB=read.csv(file.choose())
-for likelihood ratio test
->LRT(data=WPI_JWPB,a=4,b=3,alpha=0.05)
-for Min-Min-T test
->MinMinT(data=WPI_JWPB,a=4,b=3,alpha=0.05)
-for Min-Max-T test 
->MinMaxT(data=WPI_JWPB,a=4,b=3,alpha=0.05)
+for loading the dataset (the data must be in .csv format): WPI_JWPB=read.csv(file.choose())
+for likelihood ratio test run: LRT(data=WPI_JWPB,a=4,b=3,alpha=0.05)
+for Min-Min-T test run: MinMinT(data=WPI_JWPB,a=4,b=3,alpha=0.05)
+for Min-Max-T test run: MinMaxT(data=WPI_JWPB,a=4,b=3,alpha=0.05)
