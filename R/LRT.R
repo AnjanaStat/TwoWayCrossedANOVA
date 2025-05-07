@@ -175,13 +175,14 @@ LRT<-function(data,a,b,alpha)
           s0[(i-1)*b+j]=result
         }
       }
+      S0=s0
       diff=max(abs(x16-beta0))
       if(diff<=0.0000001)
       {
         break
       }
       sum((g[[6]]-beta0[2])^2)/N[6]
-      S0=s0;x16=beta0
+      x16=beta0
     }
     #((g[[1]]-beta0[1])^2)
     #sum((g[[1]]-beta0[1])^2)/N[1]
