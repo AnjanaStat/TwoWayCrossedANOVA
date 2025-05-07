@@ -75,7 +75,6 @@ LRT<-function(data,a,b,alpha)
       tmp1=NULL;ua=NULL
       tmp2=NULL;Um=NULL
       #Nu[1][2]
-      i=1;j=1
       for(j in 1:(b-1))
       {
         for( i in 1:a)
@@ -132,6 +131,7 @@ LRT<-function(data,a,b,alpha)
           s[(i-1)*b+j]=result
         }
       }
+       S1=s
       dif=NULL
       for(j in 1:b)
       {
@@ -144,7 +144,7 @@ LRT<-function(data,a,b,alpha)
       {
         break
       }
-      S1=s
+     
       x14u=Nu;x15=beta
     }
     x16=M2;S0=S
